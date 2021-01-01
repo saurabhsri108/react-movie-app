@@ -15,7 +15,7 @@ class Home extends React.Component {
         data: { movies },
       },
     } = await axios.get(
-      "https://yts.mx/api/v2/list_movies.json?sort_by=rating"
+      "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
     );
     this.setState({ movies });
     console.log(movies);
@@ -24,7 +24,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className="movies_list">
-        <h1 className="header">Top 20 Movie List</h1>
+        <h1 className="header">Top 20 Movies List</h1>
         {this.state.movies.map((movie) => (
           <Movies
             key={movie.id}
