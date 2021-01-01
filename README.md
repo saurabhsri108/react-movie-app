@@ -1,5 +1,9 @@
-> ## React Movie App
+# React Movie App
 
-Movies API App Simple Project for learning react and submitting in MLH FellowShip program
+Movies API App Simple Project for learning ReactJS
 
-CSS Credit: [Zimuzo Ejinkeonye](https://codepen.io/zim_ejin/pen/vMPjjq)
+-[ x ] Hello World
+
+Original CSS Credit: [Zimuzo Ejinkeonye](https://codepen.io/zim_ejin/pen/vMPjjq)
+
+Modified CSS as per need
