@@ -2,7 +2,7 @@
 
 Movies API App Simple Project for learning ReactJS
 
--[ x ] Hello World
+-[x] Hello World
 
 Original CSS Credit: [Zimuzo Ejinkeonye](https://codepen.io/zim_ejin/pen/vMPjjq)
 

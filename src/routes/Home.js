@@ -3,6 +3,8 @@ import "./Home.css";
 import axios from "axios";
 import Movies from "../components/Movies";
 
+const MOVIE_API = process.env.REACT_APP_API_KEY;
+
 class Home extends React.Component {
   state = {
     isLoading: true,
@@ -13,7 +15,7 @@ class Home extends React.Component {
   };
 
   getConfig = async () => {
-    const configUrl = `https://api.themoviedb.org/3/configuration?api_key=424009d07c87cce545a0b72550a8d48a`;
+    const configUrl = `https://api.themoviedb.org/3/configuration?api_key=${MOVIE_API}`;
 
     const {
       data: {
@@ -25,7 +27,7 @@ class Home extends React.Component {
   };
 
   getGenreList = async () => {
-    const genreUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=424009d07c87cce545a0b72550a8d48a&language=en-US`;
+    const genreUrl = `https://api.themoviedb.org/3/genre/movie/list?api_key=${MOVIE_API}&language=en-US`;
     const {
       data: { genres },
     } = await axios.get(genreUrl);
@@ -34,7 +36,7 @@ class Home extends React.Component {
   };
 
   getMovieList = async () => {
-    const url = `https://api.themoviedb.org/3/trending/movie/week?api_key=424009d07c87cce545a0b72550a8d48a`;
+    const url = `https://api.themoviedb.org/3/trending/movie/week?api_key=${MOVIE_API}`;
     const {
       data: { results },
     } = await axios.get(url);
