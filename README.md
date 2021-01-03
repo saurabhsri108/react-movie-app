@@ -8,3 +8,6 @@ Movies API App Simple Project for learning ReactJS
 ## Original CSS Credit: [Zimuzo Ejinkeonye](https://codepen.io/zim_ejin/pen/vMPjjq)
 
 Modified CSS as per project need.
+
+## Demo
+[GitHub pages](https://vasudeveloper001.github.io/react-movie-app)
